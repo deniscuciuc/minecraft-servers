@@ -5,15 +5,15 @@ services:
     image: itzg/minecraft-server
     volumes:
       - minecraft-vanilla-data:/data
-      - /home/Personal/Repo/minecraft/minecraft-servers/vanilla/plugins:/plugins
+      - /root/minecraft/minecraft-servers/vanilla/plugins:/plugins
     ports:
       - 25565:25565
     environment:
       EULA: "TRUE"
       TYPE: "BUKKIT"
       OPS: "ButterNPants"
-      ENABLE_WHITELIST: "TRUE"
-      ENFORCE_WHITELIST: "TRUE"
+      ENABLE_WHITELIST: "FALSE"
+      ENFORCE_WHITELIST: "FALSE"
     tty: true
     stdin_open: true
     restart: unless-stopped
