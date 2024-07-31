@@ -13,6 +13,9 @@ services:
       TYPE: "VANILLA"
       ENABLE_WHITELIST: "FALSE"
       ENFORCE_WHITELIST: "FALSE"
+      MAX_PLAYERS: "5"
+      ONLINE_MODE: "FALSE"
+      SERVER_NAME: "DC - Vanilla 1.21"
     tty: true
     stdin_open: true
     restart: unless-stopped
