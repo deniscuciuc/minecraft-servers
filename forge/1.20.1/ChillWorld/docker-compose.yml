@@ -12,6 +12,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "FORGE"
+      FORGE_VERSION: 47.3.0
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
       MAX_PLAYERS: "7"
