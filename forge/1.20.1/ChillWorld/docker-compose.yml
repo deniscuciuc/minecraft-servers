@@ -13,8 +13,8 @@ services:
       EULA: "TRUE"
       TYPE: "FORGE"
       FORGE_VERSION: 47.3.0
-      ENABLE_WHITELIST: "TRUE"
-      ENFORCE_WHITELIST: "TRUE"
+      ENABLE_WHITELIST: "FALSE"
+      ENFORCE_WHITELIST: "FALSE"
       MAX_PLAYERS: "7"
       ONLINE_MODE: "FALSE"
       LEVEL_TYPE: "biomesoplenty"
