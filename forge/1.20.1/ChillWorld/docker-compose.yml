@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    volumes:
+      - minecraft-forge-1-20-1-chill-world-data:/data
+      - /root/minecraft/minecraft-servers/forge/1.20.1/ChillWorld/plugins:/plugins
+      - /root/minecraft/minecraft-servers/forge/1.20.1/ChillWorld/mods:/mods
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "FORGE"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      MAX_PLAYERS: "7"
+      ONLINE_MODE: "FALSE"
+      LEVEL_TYPE: "biomesoplenty"
+      VERSION: 1.20.1
+      MEMORY: 5G
+      SERVER_NAME: "Chill World"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+volumes:
+  minecraft-forge-1-20-1-chill-world-data:
+    external: true
