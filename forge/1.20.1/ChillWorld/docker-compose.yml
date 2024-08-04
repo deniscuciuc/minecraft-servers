@@ -19,7 +19,7 @@ services:
       ONLINE_MODE: "FALSE"
       LEVEL_TYPE: "biomesoplenty"
       VERSION: 1.20.1
-      MEMORY: 9G
+      MEMORY: 11G
       SERVER_NAME: "Chill World"
     tty: true
     stdin_open: true
