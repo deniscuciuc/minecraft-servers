@@ -1,0 +1,53 @@
+{
+    "de.rubixdev.inventorio.client.ui.InventorioScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": -18,
+                "bottom": -82
+            },
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": -18,
+                "top": 40
+            },
+            "SORT": {
+                "horizontalOffset": -54,
+                "top": -2
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -42,
+                "top": 12
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -30,
+                "top": 26
+            },
+            "SETTINGS": {
+                "top": -1
+            }
+        }
+    },
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": -18,
+                "bottom": -94
+            },
+            "SORT": {
+                "horizontalOffset": -42,
+                "bottom": 67
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -30,
+                "bottom": 53
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -18,
+                "bottom": 39
+            },
+            "CONTINUOUS_CRAFTING": {
+                "horizontalOffset": -26,
+                "bottom": -4
+            }
+        }
+    }
+}

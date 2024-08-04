@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    volumes:
+      - minecraft-forge-1-20-1-fantasy-tech-data:/data
+      - /root/minecraft/minecraft-servers/forge/1.20.1/FantasyTech/plugins:/plugins
+      - /root/minecraft/minecraft-servers/forge/1.20.1/FantasyTech/mods:/mods
+      - /root/minecraft/minecraft-servers/forge/1.20.1/FantasyTech/config:/config
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      MOD_PLATFORM: "AUTO_CURSEFORGE"
+      TYPE: "PAPER"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      MAX_PLAYERS: "7"
+      ONLINE_MODE: "FALSE"
+      LEVEL_TYPE: "biomesoplenty"
+      VERSION: 1.20.1
+      MEMORY: 5G
+      SERVER_NAME: "Fantasy Tech"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+volumes:
+  minecraft-forge-1-20-1-fantasy-tech-data:
+    external: true
