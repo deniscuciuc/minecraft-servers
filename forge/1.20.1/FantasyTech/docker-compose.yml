@@ -13,6 +13,7 @@ services:
     environment:
       EULA: "TRUE"
       MOD_PLATFORM: "FORGE"
+      FORGE_VERSION: 47.3.0 
       TYPE: "PAPER"
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
